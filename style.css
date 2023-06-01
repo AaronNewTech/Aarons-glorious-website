@@ -1,5 +1,6 @@
 body {
-    font: white;
+    background-image: url(https://aaronnewtech.github.io/images/galaga_background.gif);
+    color: white;
   }
   #background_image {
     width: 100%;
