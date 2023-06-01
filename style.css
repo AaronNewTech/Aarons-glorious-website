@@ -8,9 +8,10 @@ body {
   }
 
 
-  /* #galaga_ship {
-    background-image: url(https://aaronnewtech.github.io/Aarons-glorious-website/images/galaga_ship.png);
-    height: 40px;
+  #galga_ship {
     position: absolute;
-    
-  } */
+    height: 40px;
+    bottom: 0px;
+    left: 400px;
+    margin: 0 auto;
+}
