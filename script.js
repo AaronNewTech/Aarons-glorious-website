@@ -1,11 +1,9 @@
 // Your code here
-
-const h2 = document.createElement("h2");
-h2.textContent = "This content added by JavaScript";
+let windowWidth = window.innerWidth; 
 
 const ship = document.getElementById("ship");
 
-function moveDodgerLeft() {
+function moveShipLeft() {
     const leftNumbers = ship.style.left.replace("px", "");
     const left = parseInt(leftNumbers, 10);
   
@@ -14,23 +12,22 @@ function moveDodgerLeft() {
     }
   }
 
-  function moveDodgerRight() {
+  function moveShipRight() {
     const leftNumbers = ship.style.left.replace("px", "");
     const left = parseInt(leftNumbers, 10);
   
-    if (left > -100 && left < 910) {
+    if (left > -100 && left < windowWidth - 90) {
       ship.style.left = `${left + 12}px`;
     }
   }
-
   document.addEventListener("keydown", function (e) {
     if (e.key === "ArrowLeft") {
-      moveDodgerLeft();
+      moveShipLeft();
     }
   });
 
   document.addEventListener("keydown", function (e) {
     if (e.key === "ArrowRight") {
-      moveDodgerRight();
+      moveShipRight();
     }
   });
