@@ -3,7 +3,7 @@
 audio {
   display: none;
 }
-/* /Users/aaronsmith/Development/code/Aarons-glorious-website/fonts/emulogic.ttf */
+
 body {
   background-image: url(https://aaronnewtech.github.io/Aarons-glorious-website/images/galaga_background.gif);
   color: white;
@@ -22,8 +22,6 @@ h2 {
   width: 100%;
   height: 100%;
 }
-
-
 
 #ship{
   
@@ -75,7 +73,7 @@ background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABRCAY
   border: none;
   z-index: 1;
   height: 200px;
-  width: 120px;
+  width: 130px;
   position: absolute;
   left: 50%;
   background-repeat: no-repeat;
@@ -83,7 +81,6 @@ background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGwAAABsCAY
 }
 
 #start {
-/*   color: white; */
   font-size: 4rem;
   position: relative;
   text-decoration: none;
