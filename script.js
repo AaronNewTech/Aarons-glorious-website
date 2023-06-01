@@ -1,7 +1,22 @@
 // Your code here
 let windowWidth = window.innerWidth; 
 
+var audio = document.getElementById('sound1');
+
+setTimeout(function() {
+    audio.play();
+}, 3000);
+
 const ship = document.getElementById("ship");
+
+document.addEventListener('mousemove', function(e) {
+  let body = document.querySelector('body');
+  let shipFollow = document.getElementById('ship');
+  let left = e.offsetX;
+  // let top = e.offsetY;
+  ship.style.left = left + 'px';
+  // ship.style.top = top + 'px';
+});
 
 function moveShipLeft() {
     const leftNumbers = ship.style.left.replace("px", "");
