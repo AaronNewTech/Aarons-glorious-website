@@ -17,7 +17,9 @@ document.addEventListener('mousemove', function(e) {
   let body = document.querySelector('body');
   let shipFollow = document.getElementById('ship');
   let left = e.offsetX;
+  // let top = e.offsetY;
   ship.style.left = left + 'px';
+  // ship.style.top = top + 'px';
 });
 
 function moveShipLeft() {
