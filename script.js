@@ -1,7 +1,7 @@
 // Your code here
 let windowWidth = window.innerWidth;
 
-document.getElementById("bee").onclick = function(){
+document.getElementById("bee").onmousedown = function(){
   const sound2 = document.createElement("audio");
         sound2.src = ("https://github.com/AaronNewTech/Aarons-glorious-website/blob/main/audio/Galaga_Kill_Enemy_Sound_Effect2.mp3?raw=true")
         function play() {
@@ -10,7 +10,7 @@ document.getElementById("bee").onclick = function(){
   setTimeout(play, 500);
 };
 
-document.getElementById("boss").onclick = function(){
+document.getElementById("boss").onmousedown = function(){
   const sound2 = document.createElement("audio");
         sound2.src = ("https://github.com/AaronNewTech/Aarons-glorious-website/blob/main/audio/Galaga_Kill_Enemy_Sound_Effect2.mp3?raw=true")
         function play() {
@@ -19,7 +19,7 @@ document.getElementById("boss").onclick = function(){
   setTimeout(play, 500);
 };
 
-document.getElementById("butterfly").onclick = function(){
+document.getElementById("butterfly").onmousedown = function(){
   const sound2 = document.createElement("audio");
         sound2.src = ("https://github.com/AaronNewTech/Aarons-glorious-website/blob/main/audio/Galaga_Kill_Enemy_Sound_Effect2.mp3?raw=true")
         function play() {
