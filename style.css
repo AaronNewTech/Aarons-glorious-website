@@ -13,6 +13,14 @@
   z-index: 5;
 }
 
+#bottom-container {
+    bottom: 0px;
+    height: 300px;
+    width: 100%;
+/*     background-color: white; */
+    z-index: 5;
+}
+
 audio {
   display: none;
 }
