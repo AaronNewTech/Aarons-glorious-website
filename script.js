@@ -3,7 +3,7 @@ let windowWidth = window.innerWidth;
 
 document.getElementById("bee").onclick = function(){
   const sound2 = document.createElement("audio");
-        sound2.src = ("https://github.com/AaronNewTech/Aarons-glorious-website/blob/main/audio/audio_Galaga_Kill_Enemy_Sound_Effect2.mp3?raw=true")
+        sound2.src = ("https://github.com/AaronNewTech/Aarons-glorious-website/blob/main/audio/Galaga_Kill_Enemy_Sound_Effect2.mp3?raw=true")
         function play() {
           sound2.play() 
         }
@@ -12,7 +12,7 @@ document.getElementById("bee").onclick = function(){
 
 document.getElementById("boss").onclick = function(){
   const sound2 = document.createElement("audio");
-        sound2.src = ("https://github.com/AaronNewTech/Aarons-glorious-website/blob/main/audio/audio_Galaga_Kill_Enemy_Sound_Effect2.mp3?raw=true")
+        sound2.src = ("https://github.com/AaronNewTech/Aarons-glorious-website/blob/main/audio/Galaga_Kill_Enemy_Sound_Effect2.mp3?raw=true")
         function play() {
           sound2.play() 
         }
@@ -21,7 +21,7 @@ document.getElementById("boss").onclick = function(){
 
 document.getElementById("butterfly").onclick = function(){
   const sound2 = document.createElement("audio");
-        sound2.src = ("https://github.com/AaronNewTech/Aarons-glorious-website/blob/main/audio/audio_Galaga_Kill_Enemy_Sound_Effect2.mp3?raw=true")
+        sound2.src = ("https://github.com/AaronNewTech/Aarons-glorious-website/blob/main/audio/Galaga_Kill_Enemy_Sound_Effect2.mp3?raw=true")
         function play() {
           sound2.play() 
         }
