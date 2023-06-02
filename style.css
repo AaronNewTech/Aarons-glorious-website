@@ -3,6 +3,16 @@
 /* * {
   cursor: url("https://github.com/AaronNewTech/Aarons-glorious-website/blob/main/images/galaga_missle.png?raw=true"), auto;
 } */
+
+#enemy-container {
+  
+  bottom: 0px;
+  height: 300px;
+  width: 100%;
+/*   background-color: white; */
+  z-index: 5;
+}
+
 audio {
   display: none;
 }
