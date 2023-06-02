@@ -28,16 +28,6 @@ document.getElementById("butterfly").onmousedown = function(){
   setTimeout(play, 500);
 };
 
-// document.body.mousedown = function(e){
-//     if (e.mousedown = true) {
-//         const sound1 = document.createElement("audio");
-//         sound1.src = ("https://github.com/AaronNewTech/Aarons-glorious-website/blob/main/audio/audio_Galaga_Kill_Enemy_Sound_Effect2.mp3?raw=true")
-//         sound1.play();
-//     }
-// } 
-
-// const sound1 = new Audio("https://github.com/AaronNewTech/Aarons-glorious-website/blob/main/audio/audio_Galaga_Kill_Enemy_Sound_Effect2.mp3?raw=true");
-
 document.body.onkeyup = function(e){
     if (e.keyCode == 32) {
         const shoot1 = document.createElement("audio");
@@ -45,10 +35,6 @@ document.body.onkeyup = function(e){
         shoot1.play();
     }
 } 
-
-// const bee = document.getElementById("bee");
-// element.addEventListener("click", myFunction);
-
 
 document.body.onmousedown = function(e){
     if (e.onmousedown = true) {
