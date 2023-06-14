@@ -1,39 +1,86 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-         <!-- <audio controls preload="auto"></audio> -->
-    <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css" />
-    <title>My Personal Website</title>
-  </head>
-  <body id="body">
+// Your code here
+let windowWidth = window.innerWidth;
 
-    <!-- source for how to add a link to h1 element from post on sitepoint by user Ed_Seedhouse https://www.sitepoint.com/community/t/how-to-make-h1-h2-etc-as-links/3004 -->
-    <h1><a href="https://aaronnewtech.github.io/Aarons-glorious-website/" id="h1">Aaron Smith</a></h1>
-    <h2>An Out of This World Software Developer</h2>
-      <div id="enemy-container">
-       
-        <!-- source for a element with button from post on stackexchange by user edeverett https://stackoverflow.com/questions/3341011/making-a-button-thats-a-link-in-html -->
+function delayAbout (URL) {
+    setTimeout( function() { window.location = URL }, 2000 );
+}
 
-        <!-- source for delay function link from post on stackexchange by user nattik Gur-Arie https://stackoverflow.com/questions/14434604/i-want-to-delay-a-link-for-a-period-of-500-with-javascript -->
-        <a href="javascript:setTimeout(()=>{window.location = 'https://aaronnewtech.github.io/Aarons-glorious-website/about' },1000);"><button id="bee"> About</button></a>
-        
-        <a href="javascript:setTimeout(()=>{window.location = 'https://aaronnewtech.github.io/Aarons-glorious-website/portfolio' },1000);"><button id="boss">Portfolio</button></a>
+document.getElementById("bee").onmousedown = function(){
+  const sound2 = document.createElement("audio");
+        sound2.src = ("https://github.com/AaronNewTech/Aarons-glorious-website/blob/main/audio/Galaga_Kill_Enemy_Sound_Effect2.mp3?raw=true")
+        function play() {
+          sound2.play() 
+        }
+  setTimeout(play, 500);
+};
 
-        <a href="javascript:setTimeout(()=>{window.location = 'https://aaronnewtech.github.io/Aarons-glorious-website/contact' },1000);"><button id="butterfly">Contact</button></a>
-        
-      </div>
-    
-      <div id="ship" style="bottom: 0px; left: 500px"></div>
-      
-    </div>
+document.getElementById("boss").onmousedown = function(){
+  const sound2 = document.createElement("audio");
+        sound2.src = ("https://github.com/AaronNewTech/Aarons-glorious-website/blob/main/audio/Galaga_Kill_Enemy_Sound_Effect2.mp3?raw=true")
+        function play() {
+          sound2.play() 
+        }
+  setTimeout(play, 500);
+};
 
-    <div id="bottom-container"></div>
+document.getElementById("butterfly").onmousedown = function(){
+  const sound2 = document.createElement("audio");
+        sound2.src = ("https://github.com/AaronNewTech/Aarons-glorious-website/blob/main/audio/Galaga_Kill_Enemy_Sound_Effect2.mp3?raw=true")
+        function play() {
+          sound2.play() 
+        }
+  setTimeout(play, 500);
+};
 
-  <script type="text/javascript" src="script.js"></script>
-  </body>
-</html>
+document.body.onkeyup = function(e){
+    if (e.keyCode == 32) {
+        const shoot1 = document.createElement("audio");
+        shoot1.src = ("https://github.com/AaronNewTech/Aarons-glorious-website/blob/main/audio/Galaga_Firing_Sound_Effect2.mp3?raw=true")
+        shoot1.play();
+    }
+} 
 
+document.body.onmousedown = function(e){
+    if (e.onmousedown = true) {
+        const shoot2 = document.createElement("audio");
+        shoot2.src = ("https://github.com/AaronNewTech/Aarons-glorious-website/blob/main/audio/Galaga_Firing_Sound_Effect2.mp3?raw=true")
+        shoot2.play();
+    }
+} 
 
+const ship = document.getElementById("ship");
+
+const onMouseMove = (e) =>{
+  ship.style.left = e.pageX + 'px';
+}
+
+document.addEventListener('mousemove', onMouseMove);
+
+function moveShipLeft() {
+    const leftNumbers = ship.style.left.replace("px", "");
+    const left = parseInt(leftNumbers, 10);
+  
+    if (left > 0) {
+      ship.style.left = `${left - 12}px`;
+    }
+  }
+
+  function moveShipRight() {
+    const leftNumbers = ship.style.left.replace("px", "");
+    const left = parseInt(leftNumbers, 10);
+  
+    if (left > -100 && left < windowWidth - 90) {
+      ship.style.left = `${left + 12}px`;
+    }
+  }
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "ArrowLeft") {
+      moveShipLeft();
+    }
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "ArrowRight") {
+      moveShipRight();
+    }
+  });
