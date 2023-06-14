@@ -10,16 +10,19 @@
   </head>
   <body id="body">
 
-    <h1>Aaron Smith</h1>
+    <!-- source for how to add a link to h1 element from post on sitepoint by user Ed_Seedhouse https://www.sitepoint.com/community/t/how-to-make-h1-h2-etc-as-links/3004 -->
+    <h1><a href="https://aaronnewtech.github.io/Aarons-glorious-website/" id="h1">Aaron Smith</a></h1>
     <h2>An Out of This World Software Developer</h2>
       <div id="enemy-container">
        
         <!-- source for a element with button from post on stackexchange by user edeverett https://stackoverflow.com/questions/3341011/making-a-button-thats-a-link-in-html -->
-        <a href="https://aaronnewtech.github.io/Aarons-glorious-website/about"><button id="bee"> About</button></a>
-        
-        <a href="https://aaronnewtech.github.io/Aarons-glorious-website/portfolio"><button id="boss">Portfolio</button></a>
 
-        <a href="https://aaronnewtech.github.io/Aarons-glorious-website/contact"><button id="butterfly">Contact</button></a>
+        <!-- source for delay function link from post on stackexchange by user nattik Gur-Arie https://stackoverflow.com/questions/14434604/i-want-to-delay-a-link-for-a-period-of-500-with-javascript -->
+        <a href="javascript:setTimeout(()=>{window.location = 'https://aaronnewtech.github.io/Aarons-glorious-website/about' },1000);"><button id="bee"> About</button></a>
+        
+        <a href="javascript:setTimeout(()=>{window.location = 'https://aaronnewtech.github.io/Aarons-glorious-website/portfolio' },1000);"><button id="boss">Portfolio</button></a>
+
+        <a href="javascript:setTimeout(()=>{window.location = 'https://aaronnewtech.github.io/Aarons-glorious-website/contact' },1000);"><button id="butterfly">Contact</button></a>
         
       </div>
     
